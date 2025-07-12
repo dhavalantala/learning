@@ -7,14 +7,14 @@ import seaborn as sns
 import mlflow.sklearn
 import dagshub
 
-dagshub.init(repo_owner='bhattpriyang', repo_name='mlflow_exp_dagshub', mlflow=True)
+dagshub.init(repo_owner='dhavalantala', repo_name='learning', mlflow=True)
 
 
 mlflow.set_experiment("water_exp2")
 
 mlflow.set_tracking_uri("https://dagshub.com/bhattpriyang/mlflow_exp_dagshub.mlflow")
 
-data = pd.read_csv("D:\exp_track_mlflow1\data\water_potability.csv")
+data = pd.read_csv("/Users/dhavalantala/Downloads/water_potability.csv")
 
 from sklearn.model_selection import train_test_split
 train_data,test_data = train_test_split(data,test_size=0.20,random_state=42)
