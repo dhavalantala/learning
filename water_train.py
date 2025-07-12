@@ -12,7 +12,7 @@ dagshub.init(repo_owner='dhavalantala', repo_name='learning', mlflow=True)
 
 mlflow.set_experiment("water_exp2")
 
-mlflow.set_tracking_uri("https://dagshub.com/bhattpriyang/mlflow_exp_dagshub.mlflow")
+mlflow.set_tracking_uri("https://dagshub.com/dhavalantala/learning.mlflow")
 
 data = pd.read_csv("/Users/dhavalantala/Downloads/water_potability.csv")
 
